@@ -4,7 +4,6 @@ import './App.css';
 import { Amplify } from "aws-amplify";
 import { withAuthenticator } from "@aws-amplify/ui-react";
 import '@aws-amplify/ui-react/styles.css'; 
-
 import awsExports from "./aws-exports";
 Amplify.configure(awsExports);
 
@@ -16,7 +15,7 @@ function App() {
         <p>
           Edit <code>src/App.tsx</code> save to reload.
         </p>
-        Learn React
+        Sign Out
       </header>
     </div>
   );
