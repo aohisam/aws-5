@@ -8,7 +8,7 @@
     "autoVerifiedAttributes": [
       "email"
     ],
-    "mfaConfiguration": "OPTIONAL",
+    "mfaConfiguration": "OFF",
     "mfaTypes": [
       "TOTP"
     ],
@@ -35,7 +35,7 @@
       "email",
       "phone_number"
     ],
-    "useDefault": "default",
+    "useDefault": "manual",
     "userPoolGroups": false,
     "userPoolGroupList": [
       "group",
@@ -58,12 +58,20 @@
     },
     "breakCircularDependency": true,
     "dependsOn": [],
-    "hostedUI": false,
+    "hostedUI": true,
     "triggers": {},
     "parentStack": {
       "Ref": "AWS::StackId"
     },
     "permissions": [],
-    "authProviders": []
+    "authProviders": [],
+    "thirdPartyAuth": false,
+    "hostedUIDomainName": "47kz9kkdyx41",
+    "authProvidersUserPool": [
+      "Google"
+    ],
+    "hostedUIProviderMeta": "[{\"ProviderName\":\"Google\",\"authorize_scopes\":\"openid profile\",\"AttributeMapping\":{\"username\":\"sub\"}}]",
+    "hostedUIProviderCreds": "[{\"ProviderName\":\"Google\"}]",
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"https://main.d5r2b5hewx9ew.amplifyapp.com\",\"http://localhost:3000/\",\"http://localhost:3000/\"],\"LogoutURLs\":[\"https://main.d5r2b5hewx9ew.amplifyapp.com\"]}"
   }
 }
