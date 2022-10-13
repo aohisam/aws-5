@@ -1,7 +1,8 @@
 {
   "name": "aws-5",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "serve": "vue-cli-service serve --mode production",
   "dependencies": {
     "@aws-amplify/ui-react": "^3.5.7",
     "@testing-library/jest-dom": "^5.16.5",
