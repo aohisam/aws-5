@@ -35,9 +35,12 @@
       "email",
       "phone_number"
     ],
-    "useDefault": "manual",
+    "useDefault": "defaultSocial",
     "userPoolGroups": false,
-    "userPoolGroupList": [],
+    "userPoolGroupList": [
+      "group",
+      "aiueo"
+    ],
     "adminQueries": false,
     "usernameCaseSensitive": false,
     "useEnabledMfas": true,
@@ -61,13 +64,12 @@
       "Ref": "AWS::StackId"
     },
     "permissions": [],
-    "authProviders": [],
-    "thirdPartyAuth": false,
     "hostedUIDomainName": "nfw8cavrh8f3",
     "authProvidersUserPool": [
       "Google"
     ],
     "hostedUIProviderMeta": "[{\"ProviderName\":\"Google\",\"authorize_scopes\":\"openid profile\",\"AttributeMapping\":{\"username\":\"sub\"}}]",
-    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"https://main.d5r2b5hewx9ew.amplifyapp.com\"],\"LogoutURLs\":[\"https://main.d5r2b5hewx9ew.amplifyapp.com\"]}"
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"https://main.d5r2b5hewx9ew.amplifyapp.com\"],\"LogoutURLs\":[\"https://main.d5r2b5hewx9ew.amplifyapp.com\"]}",
+    "authProviders": []
   }
 }
