@@ -13,7 +13,8 @@
     },
     "categories": {
       "auth": {
-        "aws5": {}
+        "aws5": {},
+        "userPoolGroups": {}
       }
     }
   }

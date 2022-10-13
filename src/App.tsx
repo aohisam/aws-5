@@ -1,13 +1,17 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Amplify } from "aws-amplify";
+import { Amplify, Auth } from "aws-amplify";
 import { withAuthenticator } from "@aws-amplify/ui-react";
-import '@aws-amplify/ui-react/styles.css'; 
+import '@aws-amplify/ui-react/styles.css';
 import awsExports from "./aws-exports";
 Amplify.configure(awsExports);
 
 function App() {
+  const signOut = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+    console.log(Auth);
+    return Auth.signOut;
+  }
   return (
     <div className="App">
       <header className="App-header">
@@ -15,7 +19,9 @@ function App() {
         <p>
           Edit <code>src/App.tsx</code> save to reload.
         </p>
-        Sign Out
+        <button onClick={((e) => signOut(e))}>
+          Sign Out
+        </button>
       </header>
     </div>
   );
