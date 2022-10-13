@@ -9,8 +9,7 @@ Amplify.configure(awsExports);
 
 function App() {
   const signOut = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-    console.log(Auth);
-    return Auth.signOut;
+    Auth.signOut();
   }
   return (
     <div className="App">
