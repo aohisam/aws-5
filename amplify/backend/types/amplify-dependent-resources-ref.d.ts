@@ -16,5 +16,12 @@ export type AmplifyDependentResourcesAttributes = {
             "groupGroupRole": "string",
             "aiueoGroupRole": "string"
         }
+    },
+    "api": {
+        "aws5": {
+            "GraphQLAPIKeyOutput": "string",
+            "GraphQLAPIIdOutput": "string",
+            "GraphQLAPIEndpointOutput": "string"
+        }
     }
 }
