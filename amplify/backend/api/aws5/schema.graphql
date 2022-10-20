@@ -14,3 +14,18 @@ type Board @model @auth(rules: [{allow: public}]) {
   image: String
   personID: ID! @index(name: "byPerson")
 }
+
+schema {
+  query: Query
+}
+
+type Query {
+  getTodos: [Todo]
+}
+
+type Todo {
+  id: ID!
+  name: String
+  description: String
+  priority: Int
+}

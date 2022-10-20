@@ -1,5 +1,13 @@
 import { ModelInit, MutableModel } from "@aws-amplify/datastore";
 
+export declare class Todo {
+  readonly id: string;
+  readonly name?: string | null;
+  readonly description?: string | null;
+  readonly priority?: number | null;
+  constructor(init: ModelInit<Todo>);
+}
+
 type PersonMetaData = {
   readOnlyFields: 'createdAt' | 'updatedAt';
 }

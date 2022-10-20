@@ -15,6 +15,15 @@
       "auth": {
         "aws5": {},
         "userPoolGroups": {}
+      },
+      "api": {
+        "aws5": {}
+      },
+      "function": {
+        "aws5730d244f": {
+          "deploymentBucketName": "amplify-aws5-dev-132549-deployment",
+          "s3Key": "amplify-builds/aws5730d244f-68435a2f75554676344e-build.zip"
+        }
       }
     }
   }

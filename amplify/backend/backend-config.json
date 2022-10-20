@@ -54,6 +54,7 @@
             "authenticationType": "API_KEY",
             "apiKeyConfig": {
               "apiKeyExpirationDays": 30,
+              "apiKeyExpirationDate": "2022-11-13T23:15:27.549Z",
               "description": "api key description"
             }
           },
@@ -64,6 +65,24 @@
           ]
         }
       }
+    }
+  },
+  "function": {
+    "aws5730d244f": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "dependsOn": [
+        {
+          "category": "api",
+          "resourceName": "aws5",
+          "attributes": [
+            "GraphQLAPIIdOutput",
+            "GraphQLAPIEndpointOutput",
+            "GraphQLAPIKeyOutput"
+          ]
+        }
+      ]
     }
   }
 }

@@ -185,6 +185,40 @@ export const schema = {
         }
     },
     "enums": {},
-    "nonModels": {},
-    "version": "e183f2ad66038b3f79b459abc9baaf8a"
+    "nonModels": {
+        "Todo": {
+            "name": "Todo",
+            "fields": {
+                "id": {
+                    "name": "id",
+                    "isArray": false,
+                    "type": "ID",
+                    "isRequired": true,
+                    "attributes": []
+                },
+                "name": {
+                    "name": "name",
+                    "isArray": false,
+                    "type": "String",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "description": {
+                    "name": "description",
+                    "isArray": false,
+                    "type": "String",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "priority": {
+                    "name": "priority",
+                    "isArray": false,
+                    "type": "Int",
+                    "isRequired": false,
+                    "attributes": []
+                }
+            }
+        }
+    },
+    "version": "2d6ee34b60c03eb9f06860e0874dffb5"
 };

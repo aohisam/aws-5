@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "api": {
+      "aws5": [
+        "Query",
+        "Mutation"
+      ]
+    }
+  },
+  "lambdaLayers": []
+}
